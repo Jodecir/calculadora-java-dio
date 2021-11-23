@@ -20,11 +20,13 @@ public class Calculadora {
             int subtrair = subtrair(a,b);
             int multiplicar = multiplicar(a,b);
             int dividir = dividir(a,b);
+            int criarMedia = criarMedia(a,b);
 
-            System.out.println("soma: " + somar);
-            System.out.println("subtração: " + subtrair);
-            System.out.println("multiplicação: " + multiplicar);
-            System.out.println("divisão: " + dividir);
+            System.out.println("Soma: " + somar);
+            System.out.println("Subtração: " + subtrair);
+            System.out.println("Multiplicação: " + multiplicar);
+            System.out.println("Divisão: " + dividir);
+            System.out.println("Média: " + criarMedia);
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();
@@ -37,13 +39,20 @@ public class Calculadora {
     public static int somar(int a, int b) {
         return a + b;
     }
+
     public static int subtrair(int a, int b) {
         return a - b;
     }
+
     public static int multiplicar(int a, int b) {
         return a * b;
     }
+
     public static int dividir(int a, int b) {
         return a / b;
+    }
+    
+    public static int criarMedia(int a, int b) {
+        return (a + b) / 2;
     }
 }
