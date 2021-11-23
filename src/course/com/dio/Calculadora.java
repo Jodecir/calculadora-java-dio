@@ -10,7 +10,7 @@ public class Calculadora {
         boolean fechado = false;
         String repetir;
 
-        while (fechado == false) {
+        do {
             System.out.println("Digite o primeiro valor: ");
             a = scan.nextInt();
             System.out.println("Digite o segundo valor: ");
@@ -30,10 +30,11 @@ public class Calculadora {
 
             System.out.println("Deseja continuar (s/n): ");
             repetir = scan.next();
-            if (repetir == "n") {
+            if (repetir.equals("n")) {
+                System.out.println("Finalizado aqui...");
                 fechado = true;
             }
-        }
+        } while (fechado == false);
     }
 
     public static int somar(int a, int b) {
