@@ -35,6 +35,7 @@ public class Calculadora {
                 fechado = true;
             }
         } while (fechado == false);
+        scan.close();
     }
 
     public static int somar(int a, int b) {
