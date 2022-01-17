@@ -1,4 +1,4 @@
-package course.com.dio;
+package src.course.com.dio;
 
 import java.util.Scanner;
 
